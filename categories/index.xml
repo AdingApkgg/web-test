@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on GGS</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://gal.saop.cc/categories/</link>
     <description>Recent content in Categories on GGS</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 21 Dec 2024 03:45:40 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gal.saop.cc/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android</title>
-      <link>http://localhost:1313/categories/android/</link>
+      <link>https://gal.saop.cc/categories/android/</link>
       <pubDate>Sat, 21 Dec 2024 03:45:40 +0000</pubDate>
-      <guid>http://localhost:1313/categories/android/</guid>
+      <guid>https://gal.saop.cc/categories/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/categories/windows/</link>
+      <link>https://gal.saop.cc/categories/windows/</link>
       <pubDate>Sat, 21 Dec 2024 03:45:40 +0000</pubDate>
-      <guid>http://localhost:1313/categories/windows/</guid>
+      <guid>https://gal.saop.cc/categories/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>PSP</title>
-      <link>http://localhost:1313/categories/psp/</link>
+      <link>https://gal.saop.cc/categories/psp/</link>
       <pubDate>Wed, 20 Nov 2024 02:47:40 +0000</pubDate>
-      <guid>http://localhost:1313/categories/psp/</guid>
+      <guid>https://gal.saop.cc/categories/psp/</guid>
       <description></description>
     </item>
     <item>
       <title>KRKR</title>
-      <link>http://localhost:1313/categories/krkr/</link>
+      <link>https://gal.saop.cc/categories/krkr/</link>
       <pubDate>Mon, 18 Nov 2024 20:51:40 +0000</pubDate>
-      <guid>http://localhost:1313/categories/krkr/</guid>
+      <guid>https://gal.saop.cc/categories/krkr/</guid>
       <description></description>
     </item>
     <item>
       <title>Tyranor</title>
-      <link>http://localhost:1313/categories/tyranor/</link>
+      <link>https://gal.saop.cc/categories/tyranor/</link>
       <pubDate>Mon, 11 Nov 2024 00:26:50 +0000</pubDate>
-      <guid>http://localhost:1313/categories/tyranor/</guid>
+      <guid>https://gal.saop.cc/categories/tyranor/</guid>
       <description></description>
     </item>
     <item>
       <title>IOS</title>
-      <link>http://localhost:1313/categories/ios/</link>
+      <link>https://gal.saop.cc/categories/ios/</link>
       <pubDate>Tue, 24 Sep 2024 00:26:30 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ios/</guid>
+      <guid>https://gal.saop.cc/categories/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/categories/linux/</link>
+      <link>https://gal.saop.cc/categories/linux/</link>
       <pubDate>Tue, 24 Sep 2024 00:26:30 +0000</pubDate>
-      <guid>http://localhost:1313/categories/linux/</guid>
+      <guid>https://gal.saop.cc/categories/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>MacOS</title>
-      <link>http://localhost:1313/categories/macos/</link>
+      <link>https://gal.saop.cc/categories/macos/</link>
       <pubDate>Tue, 24 Sep 2024 00:26:30 +0000</pubDate>
-      <guid>http://localhost:1313/categories/macos/</guid>
+      <guid>https://gal.saop.cc/categories/macos/</guid>
       <description></description>
     </item>
     <item>
       <title>ONS</title>
-      <link>http://localhost:1313/categories/ons/</link>
+      <link>https://gal.saop.cc/categories/ons/</link>
       <pubDate>Mon, 16 Sep 2024 03:50:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ons/</guid>
+      <guid>https://gal.saop.cc/categories/ons/</guid>
       <description></description>
     </item>
     <item>
       <title>Other</title>
-      <link>http://localhost:1313/categories/other/</link>
+      <link>https://gal.saop.cc/categories/other/</link>
       <pubDate>Thu, 04 Apr 2024 19:40:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/other/</guid>
+      <guid>https://gal.saop.cc/categories/other/</guid>
       <description></description>
     </item>
   </channel>
