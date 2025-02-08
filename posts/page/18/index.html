@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>我的新 Hugo 网站</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.140.1">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="我的新 Hugo 网站" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="我的新 Hugo 网站" />
+      
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/">
+  <meta property="og:site_name" content="我的新 Hugo 网站">
+  <meta property="og:title" content="Posts">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Posts">
+  <meta itemprop="datePublished" content="2024-12-30T02:28:13+08:00">
+  <meta itemprop="dateModified" content="2024-12-30T02:28:13+08:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Posts">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        我的新 Hugo 网站
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2023-03-10-markdown%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E5%86%99%E6%B3%95%E6%B1%87%E6%80%BB/" class="link black dim">
+        Markdown语法与外置标签写法汇总
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="markdown-语法自带格式">Markdown 语法自带格式</h1>
+<p>{% note info %}参考：<a href="https://blog.csdn.net/u014061630/article/details/81359144">Markdown 语法图文全面详解(10 分钟学会)</a>{% endnote %}
+{% note warning %}注意：此页面偶尔会存在 CSS 冲突问题!{% endnote %}</p>
+<h2 id="代码块">代码块</h2>
+<p>{% tabs 分栏 %}</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">\`</span><span style="color:#e6db74">``</span>sh
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># VSCode终端</span>
+</span></span><span style="display:flex;"><span>hexo clean; hexo s
+</span></span><span style="display:flex;"><span>hexo clean; hexo g; hexo d
+</span></span><span style="display:flex;"><span>git add .; git commit -m <span style="color:#e6db74">&#34;npm publish&#34;</span>; npm version patch;
+</span></span><span style="display:flex;"><span>git push
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cmder终端</span>
+</span></span><span style="display:flex;"><span>hexo clean <span style="color:#f92672">&amp;&amp;</span> hexo s
+</span></span><span style="display:flex;"><span>hexo clean <span style="color:#f92672">&amp;&amp;</span> hexo g <span style="color:#f92672">&amp;&amp;</span> hexo d
+</span></span><span style="display:flex;"><span>git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;npm publish&#34;</span> <span style="color:#f92672">&amp;&amp;</span> npm version patch
+</span></span><span style="display:flex;"><span>git push
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">\`</span><span style="color:#e6db74">``</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># VSCode终端</span>
+</span></span><span style="display:flex;"><span>hexo clean; hexo s
+</span></span><span style="display:flex;"><span>hexo clean; hexo g; hexo d
+</span></span><span style="display:flex;"><span>git add .; git commit -m <span style="color:#e6db74">&#34;npm publish&#34;</span>; npm version patch;
+</span></span><span style="display:flex;"><span>git push
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cmder终端</span>
+</span></span><span style="display:flex;"><span>hexo clean <span style="color:#f92672">&amp;&amp;</span> hexo s
+</span></span><span style="display:flex;"><span>hexo clean <span style="color:#f92672">&amp;&amp;</span> hexo g <span style="color:#f92672">&amp;&amp;</span> hexo d
+</span></span><span style="display:flex;"><span>git add . <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;npm publish&#34;</span> <span style="color:#f92672">&amp;&amp;</span> npm version patch
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<p>{% endtabs %}</p>
+    </div>
+    <a href="/posts/2023-03-10-markdown%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E5%86%99%E6%B3%95%E6%B1%87%E6%80%BB/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2023-02-23-%E5%A4%A9%E7%BF%BC%E6%A0%A1%E5%9B%AD%E7%BD%91%E5%BC%80%E5%90%AF%E7%83%AD%E7%82%B9/" class="link black dim">
+        突破天翼校园网限制开启移动热点
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="前言">前言</h2>
+<p>大多数的在校学生应该很清楚，天翼校园网只允许一个账号一台设备，</p>
+<p>也不知道为什么要这么限制，就这点极大的影响了在校学生的日常使用！</p>
+<p>不仅仅是这样，甚至连移动热点也不能开！</p>
+<p>如果开了就会被<code>天翼校园客户端</code>检测到，然后导致网络连接中断</p>
+<p>为了解决掉这个问题，就推荐下这个运行在 Windows 系统的小工具</p>
+<p>也顺便记录下，避免我也忘了 😂。</p>
+<p>需要搭配旧版<code>天翼校园客户端</code>使用</p>
+<p>安卓和苹果系统的暂无..</p>
+<blockquote>
+<p>软件工具压缩包下载</p>
+<p>下载线路 1：https://adingapkgg.lanzouw.com/ikowh0olgw7g</p>
+<p>下载线路 2：https://www.123pan.com/s/VMelVv-id1zH.html</p>
+</blockquote>
+<h2 id="原使用教程">原使用教程</h2>
+<p>EShare Tool Preview</p>
+<p>Version 1.1.1（FR）</p>
+<p>Unlimited sharing!</p>
+<blockquote>
+<p>项目地址：https://github.com/PandaAdap/EShareTool</p>
+</blockquote>
+<h3 id="注意">注意</h3>
+<p>该工具只能突破网络共享限制，不能突破一个账号一台设备的限制。</p>
+<p>适用于有多台设备需要连接校园网。</p>
+<h3 id="使用条件">使用条件</h3>
+<p>电脑至少需要有一个以上的无线网卡（用于开启热点）</p>
+<p>如果没有无线网卡，可以去网上搜索<code>无线网卡</code>进行购买！</p>
+<p>并且有其他网卡已经连接到校园网，且网络能够成功联网使用</p>
+<blockquote>
+<p>示例</p>
+<ol>
+<li>一无线网卡不连接 WiFi，另一有线网卡连接校园网</li>
+<li>一无线网卡不连接 WiFi，另一无线网卡连接校园网</li>
+<li>只有一个无线网卡连接校园网，直接开启热点</li>
+</ol>
+</blockquote>
+<h3 id="使用方法">使用方法</h3>
+<ol>
+<li>卸载新版天翼校园客户端，安装压缩包内的旧版天翼校园网客户端，然后启动该工具</li>
+<li>开启移动热点（如果无法开启，可先登录校园网联网后再开启）</li>
+<li>点击配置共享就可以开启移动热点而不掉线（如果先登录后开热点再配置共享的，配置后重新登录即可）</li>
+<li>配置完成后即可永久共享，无需再次配置，无需一直开启本软件，重启依旧生效！</li>
+<li>如果不行请多试几次或者评论留言！</li>
+</ol>
+    </div>
+    <a href="/posts/2023-02-23-%E5%A4%A9%E7%BF%BC%E6%A0%A1%E5%9B%AD%E7%BD%91%E5%BC%80%E5%90%AF%E7%83%AD%E7%82%B9/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2023-02-21-%E5%8E%9F%E7%A5%9Emod%E6%A8%A1%E7%BB%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="link black dim">
+        原神mod模组安装教程
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="前言">前言</h2>
+<p>安装<a href="https://blog.saop.cc/p/ea5c/">原神私服</a>mod 模组仅支持 Windows 系统，其他系统请退出此教程！</p>
+<p>需具备一点计算机基础知识（真 • 一点即可），否则请退出此教程，谢谢！</p>
+<p>操作过程中，如出现任何问题，请评论留言，不想看教程怎么办？（那你还玩什么 mod，请退出此教程）</p>
+<p>请不要在官服使用 mod，会封号！！</p>
+<p>请不要在同一个角色或武器等其他物品上打多个 mod，轻则出现 bug（模型抽搐），重则游戏闪退，蓝屏死机电脑报废！！</p>
+<p>删掉所有的杀毒软件，或者关掉也行（前提是你能关的掉）</p>
+<blockquote>
+<p>白嫖党们如果搞成功了记得点击右下角评论按钮留个言呗(～￣ ▽ ￣)～</p>
+</blockquote>
+<h2 id="mod-模组工具使用">mod 模组工具使用</h2>
+<blockquote>
+<p>123 云盘（解压码：saop.cc）：https://www.123pan.com/s/VMelVv-MI1zH.html</p>
+<p>天翼云盘（访问码：0gx0）：https://cloud.189.cn/web/share?code=3yuUbiQFFV73</p>
+</blockquote>
+<p>从云盘上下载到<code>YS MOD.zip</code>压缩文件，解压至任意文件夹或分区盘内，然后进入<code>YS MOD</code>&gt;<code>3dmigoto</code>文件夹，</p>
+<p><img src="/img/202304230046952.webp" alt="3dmigoto文件夹"></p>
+<p>使用<code>记事本</code>编辑<code>d3dx.ini</code>文件，<!-- raw HTML omitted -->Win<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F<!-- raw HTML omitted --> 打开搜索框，搜索<code>YuanShen.exe</code>点击查找。</p>
+<p><img src="/img/202304230048511.webp" alt="d3dx.ini"></p>
+<p>将<code>Z:\ys\yscn\Genshin Impact\Genshin Impact Game\YuanShen.exe</code>替换为你的原神私服游戏本体<code>YuanShen.exe</code>的执行程序路径，然后 <!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->S<!-- raw HTML omitted --> 保存后退出。</p>
+    </div>
+    <a href="/posts/2023-02-21-%E5%8E%9F%E7%A5%9Emod%E6%A8%A1%E7%BB%84%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/17/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/16/" aria-label="Page 16" class="page-link" role="button">16</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/17/" aria-label="Page 17" class="page-link" role="button">17</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 18" class="page-link" role="button">18</a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  我的新 Hugo 网站 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

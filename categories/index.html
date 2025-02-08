@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | GGS</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+        
+        <a href="/">Home</a>
+        
+        <a href="/posts/">Posts</a>
+        
+        <a href="/tags/">Tags</a>
+        
+        <a href="/categories/">Categories</a>
+        
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+        <script src="/pagefind/pagefind-ui.js"></script>
+        <div id="search"></div>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                new PagefindUI({ element: "#search", showSubResults: true });
+            });
+        </script>
+    </nav>
+</header>
+
+  <main id="pjax-container">
+    
+  <h1>Categories</h1>
+  
+  
+    <h2><a href="/categories/android/">Android</a></h2>
+    
+  
+    <h2><a href="/categories/windows/">Windows</a></h2>
+    
+  
+    <h2><a href="/categories/psp/">PSP</a></h2>
+    
+  
+    <h2><a href="/categories/krkr/">KRKR</a></h2>
+    
+  
+    <h2><a href="/categories/tyranor/">Tyranor</a></h2>
+    
+  
+    <h2><a href="/categories/ios/">IOS</a></h2>
+    
+  
+    <h2><a href="/categories/linux/">Linux</a></h2>
+    
+  
+    <h2><a href="/categories/macos/">MacOS</a></h2>
+    
+  
+    <h2><a href="/categories/ons/">ONS</a></h2>
+    
+  
+    <h2><a href="/categories/other/">Other</a></h2>
+    
+  
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GGS</p>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>
+    function initCodeHighlight() {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    }
+    document.addEventListener('DOMContentLoaded', initCodeHighlight);
+</script>
+
+  <script src="https://npm.elemecdn.com/pjax/pjax.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var pjax = new Pjax({
+            selectors: ["title", "#pjax-container"],
+            cacheBust: false
+        });
+
+        document.addEventListener('pjax:complete', function () {
+            
+            if (typeof initDarkMode === 'function') initDarkMode();
+            if (typeof initCodeHighlight === 'function') initCodeHighlight();
+        });
+    });
+</script>
+
+  <script src="/js/main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/js/sw.js')
+        .then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch(function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+  </script>
+</body>
+
+</html>

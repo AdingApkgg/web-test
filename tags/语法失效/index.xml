@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>语法失效 on 我的新 Hugo 网站</title>
+    <link>http://localhost:1313/tags/%E8%AF%AD%E6%B3%95%E5%A4%B1%E6%95%88/</link>
+    <description>Recent content in 语法失效 on 我的新 Hugo 网站</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 15 Feb 2023 05:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E8%AF%AD%E6%B3%95%E5%A4%B1%E6%95%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo下Markdown语法失效总结</title>
+      <link>http://localhost:1313/posts/2023-02-15-hexo%E4%B8%8Bmarkdown%E8%AF%AD%E6%B3%95%E5%A4%B1%E6%95%88%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 15 Feb 2023 05:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-02-15-hexo%E4%B8%8Bmarkdown%E8%AF%AD%E6%B3%95%E5%A4%B1%E6%95%88%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;{% note info simple %}参考：&lt;a href=&#34;https://www.jianshu.com/p/e19eff4311f4&#34;&gt;hexo 下 Markdown 语法失效总结&lt;/a&gt;{% endnote %}&lt;/p&gt;&#xA;&lt;h2 id=&#34;问题汇总&#34;&gt;问题汇总&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;多级有序列表序号显示异常问题&lt;/li&gt;&#xA;&lt;li&gt;table 表格显示异常，不显示问题&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;多级有序列表序号显示异常&#34;&gt;&lt;strong&gt;多级有序列表序号显示异常&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Markdown 无法实现&amp;quot;多级有序列表&amp;quot;, 而且在&amp;quot;有序列表&amp;quot;中断时, 会重新从 1 开始排序。即在 sublime text 中，正常显示的有序序列，写 hexo 静态 blog 显示异常，如下图。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/202304142302241.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;解决&#34;&gt;&lt;strong&gt;解决&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;直接删除上一个序号最后与本序号之间的空行&#xA;发现了一篇解决方案&lt;a href=&#34;https://www.jianshu.com/p/20405c2980dc&#34;&gt;hexo 下 markdown 语法 有序列表序号不匹配&lt;/a&gt; 他是在序号之间的每一段正文左侧添加空格，但是并没有解决我的问题。我又尝试着把序号最后与下一个序号之间的空行删掉，问题竟然解决了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;存在问题&#34;&gt;&lt;strong&gt;存在问题&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;我在解决了下一个表格不显示问题之后，发现序号展示又异常了。因为表格需要与上方正文之间有两个空行。因此，序号正常显示和表格正常显示只能选择一种。现在我还没有找到两全其美的方法。如果你解决了，请在下方评论留言。&lt;/p&gt;&#xA;&lt;h3 id=&#34;结果展示&#34;&gt;&lt;strong&gt;结果展示&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.sunhong.vip/2019/03/11/%E8%AF%BB%E3%80%8AHTTP%E5%9B%BE%E8%A7%A3%E3%80%8B-Chapt-2/#more&#34;&gt;读《HTTP 图解》-Chapt 2&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-表格显示异常不显示&#34;&gt;table 表格显示异常，不显示&lt;/h2&gt;&#xA;&lt;p&gt;table 表格显示异常，我的是直接不显示表格。如下图。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/202304142302245.webp&#34; alt=&#34;table表格不显示&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;解决-1&#34;&gt;&lt;strong&gt;解决&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;表格和正文之间空两行。&#xA;刚开始一直以为是 hexo 的表格格式不太一样，我就直接把其他人的表格复制到之前创建的表格上方，表格可以用了，尝试删除复制的表格后，仍可以用。后来发现，表格和正文之间需要两个空行。&lt;/p&gt;&#xA;&lt;h3 id=&#34;结果展示-1&#34;&gt;&lt;strong&gt;结果展示&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/202304142302243.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

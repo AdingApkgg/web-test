@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>我的新 Hugo 网站</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.140.1">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+    
+      <link href="/tags/rss/index.xml" rel="alternate" type="application/rss+xml" title="我的新 Hugo 网站" />
+      <link href="/tags/rss/index.xml" rel="feed" type="application/rss+xml" title="我的新 Hugo 网站" />
+      
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/tags/rss/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/tags/rss/">
+  <meta property="og:site_name" content="我的新 Hugo 网站">
+  <meta property="og:title" content="RSS">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="RSS">
+  <meta itemprop="datePublished" content="2023-04-21T17:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-04-21T17:00:00+00:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RSS">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        我的新 Hugo 网站
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          RSS
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links mid-gray">
+      <p>Below you will find pages that utilize the taxonomy term “RSS”</p>
+    </div>
+  </article>
+  <div class="mw8 center">
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/2023-04-21-hexo-generator-feed%E6%8F%92%E4%BB%B6%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/" class="link black dim">
+        hexo-generator-feed插件中文文档
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="声明">声明</h2>
+<p>本文档由本人<a href="https://translate.google.com/">机翻</a>自<a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a>的官方文档，仅用于记录</p>
+<blockquote>
+<p>hexo-generator-feed 官方文档：https://github.com/hexojs/hexo-generator-feed</p>
+</blockquote>
+<h2 id="hexo-generator-feeds">hexo-generator-feeds</h2>
+<p>生成 Atom 1.0 或 RSS 2.0 博客信息馈送</p>
+<h2 id="安装">安装</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm install hexo-generator-feed --save
+</span></span></code></pre></div><p>支持 Hexo 版本：</p>
+<ul>
+<li>Hexo 4+: 2.x</li>
+<li>Hexo 3: 1.x</li>
+<li>Hexo 2: 0.x</li>
+</ul>
+<h2 id="使用">使用</h2>
+<p>在帖子的<a href="https://hexo.io/docs/front-matter.html">front-matter</a>部分，您可以选择添加<code>description</code>, <code>intro</code>或<code>excerpt</code>设置来为帖子撰写摘要。 否则摘要将默认为摘录或帖子的前 140 个字符</p>
+<h2 id="配置">配置</h2>
+<p>您可以在 Hexo 的<code>_config.yml</code>中配置此插件。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">feed</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">atom</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">path</span>: <span style="color:#ae81ff">atom.xml</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">limit</span>: <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">hub</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">content</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">content_limit</span>: <span style="color:#ae81ff">140</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">content_limit_delim</span>: <span style="color:#e6db74">&#34; &#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">order_by</span>: -<span style="color:#ae81ff">date</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">icon.png</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">autodiscovery</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span></code></pre></div><ul>
+<li>
+<p><strong>enable</strong> - 启用或禁用此插件。 默认启用。</p>
+</li>
+<li>
+<p><strong>type</strong> - 馈送类型。<code>atom</code>或<code>rss2</code>。指定<code>['atom', 'rss2']</code>以输出两种类型。（默认值：<code>atom</code>）</p>
+<ul>
+<li>例子：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">feed</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Generate atom feed</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">atom</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Generate both atom and rss2 feeds</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">atom</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">rss2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">path</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">atom.xml</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">rss2.xml</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>path</strong> - 馈送路径。当指定两种类型时，路径必须遵循类型值的顺序。（默认：atom.xml/rss2.xml）</p>
+    </div>
+    <a href="/posts/2023-04-21-hexo-generator-feed%E6%8F%92%E4%BB%B6%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+  </div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  我的新 Hugo 网站 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

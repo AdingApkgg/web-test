@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IE on 我的新 Hugo 网站</title>
+    <link>http://localhost:1313/tags/ie/</link>
+    <description>Recent content in IE on 我的新 Hugo 网站</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 12 Jun 2023 23:20:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决打开IE强制跳转Edge浏览器</title>
+      <link>http://localhost:1313/posts/2023-06-12-%E9%98%BB%E6%AD%A2ie%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%ACedge/</link>
+      <pubDate>Mon, 12 Jun 2023 23:20:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-06-12-%E9%98%BB%E6%AD%A2ie%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BD%ACedge/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;本文章仅适合 Windows10 系统的小伙伴参考，因为 Windows11 已经没有 IE 浏览器了，&lt;/p&gt;&#xA;&lt;p&gt;现如今为什么还要使用 IE？很明显，某些网站仅支持 IE，就比如部分金融或政府办事类的，所以就迫不得已了..&lt;/p&gt;&#xA;&lt;p&gt;我当然知道 IE 很不好用，有很多替代品，比如 Chrome，Edge，Firefox，但有时候选择权不在你手时可由不得你不用&lt;/p&gt;&#xA;&lt;p&gt;所以就有了这篇教程文章，解决 Win10 系统下打开 IE 浏览器会自动跳转到 Edge 的问题，非必要请不要使用 IE 浏览器！&lt;/p&gt;&#xA;&lt;h2 id=&#34;教程&#34;&gt;教程&lt;/h2&gt;&#xA;&lt;h3 id=&#34;0x0001&#34;&gt;0x0001&lt;/h3&gt;&#xA;&lt;p&gt;首先打开 Edge 浏览器，进入&lt;code&gt;设置&lt;/code&gt;&amp;gt;&lt;code&gt;默认浏览器&lt;/code&gt;&amp;gt;&lt;code&gt;Internet Explorer 兼容性&lt;/code&gt;，将&lt;code&gt;允许在 Internet Explorer 模式下重新加载网站 (IE 模式)&lt;/code&gt;设置成&lt;code&gt;不允许&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/202306122317010.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;0x0002&#34;&gt;0x0002&lt;/h3&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Win&lt;!-- raw HTML omitted --&gt; + &lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;，输入 “regedit” &lt;!-- raw HTML omitted --&gt;Enter&lt;!-- raw HTML omitted --&gt; 回车打开注册表编辑器&lt;/p&gt;&#xA;&lt;p&gt;将以下的地址输入到注册表编辑器的上方地址栏然后 &lt;!-- raw HTML omitted --&gt;Enter&lt;!-- raw HTML omitted --&gt; 回车&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

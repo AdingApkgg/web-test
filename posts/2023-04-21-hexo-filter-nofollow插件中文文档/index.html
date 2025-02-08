@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>hexo-filter-nofollow插件中文文档 | 我的新 Hugo 网站</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="为网站使用到的所有外链添加nofollow属性, 可以有效地加强网站SEO和防止权重流失">
+    <meta name="generator" content="Hugo 0.140.1">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/2023-04-21-hexo-filter-nofollow%E6%8F%92%E4%BB%B6%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023-04-21-hexo-filter-nofollow%E6%8F%92%E4%BB%B6%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/">
+  <meta property="og:site_name" content="我的新 Hugo 网站">
+  <meta property="og:title" content="hexo-filter-nofollow插件中文文档">
+  <meta property="og:description" content="为网站使用到的所有外链添加nofollow属性, 可以有效地加强网站SEO和防止权重流失">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-04-21T16:30:00+00:00">
+    <meta property="article:modified_time" content="2023-04-21T16:30:00+00:00">
+    <meta property="article:tag" content="SEO">
+    <meta property="article:tag" content="Hexo插件">
+    <meta property="article:tag" content="中文文档">
+
+  <meta itemprop="name" content="hexo-filter-nofollow插件中文文档">
+  <meta itemprop="description" content="为网站使用到的所有外链添加nofollow属性, 可以有效地加强网站SEO和防止权重流失">
+  <meta itemprop="datePublished" content="2023-04-21T16:30:00+00:00">
+  <meta itemprop="dateModified" content="2023-04-21T16:30:00+00:00">
+  <meta itemprop="wordCount" content="61">
+  <meta itemprop="keywords" content="SEO,Hexo插件,中文文档">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="hexo-filter-nofollow插件中文文档">
+  <meta name="twitter:description" content="为网站使用到的所有外链添加nofollow属性, 可以有效地加强网站SEO和防止权重流失">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        我的新 Hugo 网站
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">hexo-filter-nofollow插件中文文档</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-04-21T16:30:00Z">April 21, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="声明">声明</h2>
+<p>本文档由本人<a href="https://translate.google.com/">机翻</a>自<a href="https://github.com/hexojs/hexo-filter-nofollow">hexo-filter-nofollow</a>的官方文档，仅用于记录</p>
+<blockquote>
+<p>hexo-filter-nofollow 官方文档：https://github.com/hexojs/hexo-filter-nofollow</p>
+</blockquote>
+<h2 id="hexo-filter-nofollow">hexo-filter-nofollow</h2>
+<p>为网站使用到的所有外链添加<code>rel=&quot;noopener external nofollow noreferrer&quot;</code>, 可以有效地加强网站 SEO 和防止权重流失</p>
+<p>自动为所有外部链接添加 nofollow 属性。</p>
+<p>hexo-filter-nofollow 将 rel=&ldquo;noopener external nofollow noreferrer&rdquo; 添加到所有外部链接以确保安全、隐私和 SEO。<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel">阅读更多</a>。</p>
+<h2 id="安装">安装</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm i hexo-filter-nofollow --save
+</span></span></code></pre></div><h2 id="配置">配置</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">nofollow</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">field</span>: <span style="color:#ae81ff">site</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">exclude</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#34;exclude1.com&#34;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#34;exclude2.com&#34;</span>
+</span></span></code></pre></div><ul>
+<li><strong>enable</strong> - 启用插件。默认值为<code>true</code></li>
+<li><strong>field</strong> - 您希望插件添加的范围是<code>site</code>或<code>post</code>。 默认值为<code>site</code>
+<ul>
+<li><code>post</code> - 仅将 nofollow 属性添加到帖子内容中的外部链接</li>
+<li><code>site</code> - 全站外链添加 nofollow 属性</li>
+</ul>
+</li>
+<li><strong>exclude</strong> - 排除主机名。在适用时指定子域，包括<code>www</code>
+<ul>
+<li><code>exclude1.com</code>不适用于<code>www.exclude1.com</code>或<code>en.exclude1.com</code></li>
+</ul>
+</li>
+</ul>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/seo/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">SEO</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/hexo%E6%8F%92%E4%BB%B6/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hexo插件</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">中文文档</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  我的新 Hugo 网站 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>部署Meting-API | 我的新 Hugo 网站</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="无服务器部署属于自己的Meting-API服务">
+    <meta name="generator" content="Hugo 0.140.1">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/2023-06-21-%E9%83%A8%E7%BD%B2meting-api/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/2023-06-21-%E9%83%A8%E7%BD%B2meting-api/">
+  <meta property="og:site_name" content="我的新 Hugo 网站">
+  <meta property="og:title" content="部署Meting-API">
+  <meta property="og:description" content="无服务器部署属于自己的Meting-API服务">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-21T14:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-21T14:00:00+00:00">
+    <meta property="article:tag" content="Meting">
+    <meta property="article:tag" content="API">
+
+  <meta itemprop="name" content="部署Meting-API">
+  <meta itemprop="description" content="无服务器部署属于自己的Meting-API服务">
+  <meta itemprop="datePublished" content="2023-06-21T14:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-06-21T14:00:00+00:00">
+  <meta itemprop="wordCount" content="277">
+  <meta itemprop="keywords" content="Meting,API">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="部署Meting-API">
+  <meta name="twitter:description" content="无服务器部署属于自己的Meting-API服务">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        我的新 Hugo 网站
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">部署Meting-API</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-06-21T14:00:00Z">June 21, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>{% note info simple %}</p>
+<ul>
+<li>本教程使用了 GitHub 上的<a href="https://github.com/xizeyoupan/Meting-API">xizeyoupan/Meting-API</a>开源项目，实现无服务器部署属于自己的 Meting-API</li>
+<li>本文主要针对无服务器的同学进行讲解，若有服务器可切换此仓库<a href="https://github.com/metowolf/Meting-API">metowolf/Meting-API</a>进行部署</li>
+<li>自建的好处：API 的调用无需受制于人，不怕跑路，因为 API 掌握在自己的手里</li>
+<li>演示 Test：<a href="https://meting-api.saop.cc/test">meting-api.saop.cc/test</a></li>
+</ul>
+<p>{% endnote %}</p>
+<h2 id="前置条件">前置条件</h2>
+<ol>
+<li>注册<a href="https://github.com">GitHub</a>账号（已经有就不用注册）</li>
+<li>注册<a href="https://vercel.com">Vercel</a>账号（已经有就不用注册）</li>
+<li>有能访问 GitHub 和 Vercel 官网的工具（魔法）</li>
+<li>一个属于自己的域名和一定的计算机基础知识</li>
+<li>一双手，一个脑子，一双眼，一台电脑或手机</li>
+</ol>
+<h2 id="教程">教程</h2>
+<h3 id="0x0001">0x0001</h3>
+<p>前往<a href="https://github.com/xizeyoupan/Meting-API">xizeyoupan/Meting-API</a>开源项目的仓库，点击右上角的<code>Fork</code>按钮 Fork 此仓库的 main 分支，</p>
+<p>进入<a href="https://vercel.com/">Vercel</a>平台点击<code>Add New...</code>&gt;<code>Project</code>，动下自己的脑子，添加刚才 Fork 过来的仓库，</p>
+<h3 id="0x0002">0x0002</h3>
+<p>部署成功后进入到项目的<code>Settings</code>&gt;<code>Domains</code>自定义域名，添加自己的二级域名，就比如我的<code>meting-api.saop.cc</code></p>
+<p>前往自己域名的 DNS 服务商（就比如我域名的腾讯云），添加 Vercel 提供的 CNAME 解析</p>
+<h3 id="0x0003">0x0003</h3>
+<p>稍作等待，大概两三分钟的样子，然后访问自己刚绑定<code>二级域名/test</code>，例如<code>https://meting-api.saop.cc/test</code></p>
+<p>如果出现报错就全部重来，一般来说都是自己操作的问题，成功的话就会出现以下测试页面：</p>
+<p><img src="/img/202306211351201.webp" alt=""></p>
+<p>歌曲的左上角是服务商和获取到的类型，对应的是：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">原名</th>
+          <th style="text-align: center">服务商</th>
+          <th style="text-align: center">类型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">tencent playlist</td>
+          <td style="text-align: center">QQ 音乐</td>
+          <td style="text-align: center">歌单</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">tencent song</td>
+          <td style="text-align: center">QQ 音乐</td>
+          <td style="text-align: center">单曲</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">netease playlist</td>
+          <td style="text-align: center">网易云音乐</td>
+          <td style="text-align: center">歌单</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">netease song</td>
+          <td style="text-align: center">网易云音乐</td>
+          <td style="text-align: center">单曲</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">netease artist</td>
+          <td style="text-align: center">网易云音乐</td>
+          <td style="text-align: center">艺术家</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">ytmusic playlist</td>
+          <td style="text-align: center">YouTube / 油管</td>
+          <td style="text-align: center">歌单</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">ytmusic song</td>
+          <td style="text-align: center">YouTube / 油管</td>
+          <td style="text-align: center">单曲</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">spotify playlist</td>
+          <td style="text-align: center">Spotify</td>
+          <td style="text-align: center">歌单</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">spotify song</td>
+          <td style="text-align: center">Spotify</td>
+          <td style="text-align: center">单曲</td>
+      </tr>
+  </tbody>
+</table>
+<p>如果有些服务商或类型是空白的，那就说明获取不到该服务商或类型的数据，那就要在使用的时候避开此项</p>
+<h2 id="使用">使用</h2>
+<h3 id="api-参数说明">API 参数说明</h3>
+<ul>
+<li>
+<p>server: 数据源</p>
+<ul>
+<li>netease 网易云音乐</li>
+<li>tencent QQ 音乐</li>
+</ul>
+</li>
+<li>
+<p>type: 类型</p>
+<ul>
+<li>name 歌曲名</li>
+<li>artist 歌手</li>
+<li>url 链接</li>
+<li>pic 封面</li>
+<li>lrc 歌词</li>
+<li>song 单曲</li>
+<li>playlist 歌单</li>
+</ul>
+</li>
+<li>
+<p>id: 类型 ID（封面 ID/单曲 ID/歌单 ID）</p>
+</li>
+<li>
+<p>例如：</p>
+<ul>
+<li><a href="https://meting-api.saop.cc/api?server=netease&amp;type=url&amp;id=416892104">https://meting-api.saop.cc/api?server=netease&amp;type=url&amp;id=416892104</a></li>
+<li><a href="https://meting-api.saop.cc/api?server=netease&amp;type=song&amp;id=591321">https://meting-api.saop.cc/api?server=netease&amp;type=song&amp;id=591321</a></li>
+<li><a href="https://meting-api.saop.cc/api?server=netease&amp;type=playlist&amp;id=2619366284">https://meting-api.saop.cc/api?server=netease&amp;type=playlist&amp;id=2619366284</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="api-嵌入metingminjs">API 嵌入<strong>Meting.min.js</strong></h3>
+<p>将<code>Meting.min.js</code>文件保存到自己的设备上</p>
+<blockquote>
+<p>Meting.min.js：https://npm.elemecdn.com/meting/dist/Meting.min.js</p>
+</blockquote>
+<p>编辑此文件，<!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F<!-- raw HTML omitted --> 搜索<code>api?server=</code>，将<code>https://api.i-meto.com/meting/api?server=</code>更换成自己的 API 后 <!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->S<!-- raw HTML omitted --> 保存</p>
+<ul>
+<li>更换前：<code>https://api.i-meto.com/meting/api?server=</code></li>
+<li>更换后：<code>https://meting-api.saop.cc/api?server=</code></li>
+</ul>
+<p>替换后就可以放到代码空间里使用链接引用此文件了，或放到本地使用相对链接引用也可以</p>
+<h4 id="应用于-hexo-的-butterfly-主题">应用于 Hexo 的 Butterfly 主题</h4>
+<p>配置前确保启用了 APlayer 音乐插件，不然配置了也没什么用..</p>
+<p>将<code>Meting.min.js</code>文件放到<code>[站点根目录]\source\js</code>文件夹内，编辑主题配置文件<code>_config.butterfly.yml</code>，</p>
+<p>更换<code>meting_js:</code>配置项的 CDN 链接为<code>/js/Meting.min.js</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># CDN</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Don&#39;t modify the following settings unless you know how they work</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 非必要請不要修改</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">CDN</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The CDN provider of internal scripts (主題內部 js 的 cdn 配置)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># option: local/jsdelivr/unpkg/cdnjs/custom</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Dev version can only choose. ( dev版的主題只能設置為 local )</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">internal_provider</span>: <span style="color:#ae81ff">local</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># option: local/jsdelivr/unpkg/cdnjs/custom</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># when set it to local, you need to install hexo-butterfly-extjs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">third_party_provider</span>: <span style="color:#ae81ff">unpkg</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Add version number to CDN, true or false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">version</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Custom format</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">custom_format</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">option</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">aplayer_css</span>: <span style="color:#ae81ff">https://npm.elemecdn.com/aplayer/dist/APlayer.min.css</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">aplayer_js</span>: <span style="color:#ae81ff">https://npm.elemecdn.com/aplayer/dist/APlayer.min.js</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">meting_js</span>: <span style="color:#ae81ff">/js/Meting.min.js</span>
+</span></span></code></pre></div><p>最后自然是 Hexo 三连啦！</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hexo cl; hexo g; hexo s
+</span></span></code></pre></div><p>可以 <!-- raw HTML omitted -->F12<!-- raw HTML omitted --> 查看<code>Meting.min.js</code>文件是否加载出来</p>
+<h2 id="鸣谢">鸣谢</h2>
+<blockquote>
+<p>GitHub：<a href="https://github.com/xizeyoupan/Meting-API">xizeyoupan/Meting-API</a></p>
+</blockquote>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/meting/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Meting</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/api/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">API</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  我的新 Hugo 网站 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

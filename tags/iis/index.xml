@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IIS on 我的新 Hugo 网站</title>
+    <link>http://localhost:1313/tags/iis/</link>
+    <description>Recent content in IIS on 我的新 Hugo 网站</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 31 Jan 2023 04:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/iis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装ImageMagick扩展</title>
+      <link>http://localhost:1313/posts/2023-01-31-%E5%AE%89%E8%A3%85imagemagick%E6%89%A9%E5%B1%95/</link>
+      <pubDate>Tue, 31 Jan 2023 04:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2023-01-31-%E5%AE%89%E8%A3%85imagemagick%E6%89%A9%E5%B1%95/</guid>
+      <description>&lt;p&gt;{% note info simple %}参考：&lt;a href=&#34;https://www.imooc.com/u/6798278/bbs&#34;&gt;神不在的星期二&lt;/a&gt;{% endnote %}&lt;/p&gt;&#xA;&lt;h2 id=&#34;说明&#34;&gt;说明&lt;/h2&gt;&#xA;&lt;p&gt;最终，我最终写了一个&lt;a href=&#34;https://www.58bits.com/blog/2018/04/23/installing-imagemagick-use-php-and-iis-windows-server-2012r2-and-windows-10&#34;&gt;博客文章&lt;/a&gt;，该&lt;a href=&#34;https://stackoverflow.com/questions/46960358/how-can-i-install-imagemagick-the-oct-2017-version-for-use-from-php-in-iis-on&#34;&gt;文章&lt;/a&gt;是 &lt;a href=&#34;https://stackoverflow.com/users/706595/philipd&#34;&gt;PhilipD&lt;/a&gt; &lt;a href=&#34;https://stackoverflow.com/questions/46960358/how-can-i-install-imagemagick-the-oct-2017-version-for-use-from-php-in-iis-on&#34;&gt;删除的帖子&lt;/a&gt;的&lt;a href=&#34;https://stackoverflow.com/questions/46960358/how-can-i-install-imagemagick-the-oct-2017-version-for-use-from-php-in-iis-on&#34;&gt;重新发布，该帖子&lt;/a&gt;以错误的格式发布且未得到更正。所以问题被删除了。&lt;/p&gt;&#xA;&lt;p&gt;我在这里重新发布 &lt;a href=&#34;https://stackoverflow.com/users/706595/philipd&#34;&gt;PhilipD&lt;/a&gt; 的答案，这样可以使遇到相同问题的人更容易找到它，因为花了半天的时间才找到有效的&lt;a href=&#34;https://www.58bits.com/blog/2018/04/23/installing-imagemagick-use-php-and-iis-windows-server-2012r2-and-windows-10&#34;&gt;博客文章&lt;/a&gt;。这些步骤详细介绍了 32 位安装。我为我的 64 位 php 执行了 64 位安装。&lt;/p&gt;&#xA;&lt;p&gt;该服务器位于 Windows Server 2012R2（64 位）服务器上，使用 IIS 作为 Web 服务器应用程序。但是，我安装了所有与 ImageMagick 相关的软件的 32 位版本，因为 Web 服务器应用程序（IIS）是 32 位的。以下显示了截至 2017 年 10 月的最新 / 最新版本。&lt;/p&gt;&#xA;&lt;h2 id=&#34;下载-imagemagick-安装程序&#34;&gt;下载 ImageMagick 安装程序&lt;/h2&gt;&#xA;&lt;p&gt;前往 &lt;a href=&#34;http://www.imagemagick.org/&#34;&gt;http://www.imagemagick.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;点击菜单栏中的 “下载”&lt;/p&gt;&#xA;&lt;p&gt;然后，顶部链接中的 “ &lt;a href=&#34;http://www.imagemagick.org/script/download.php#windows&#34;&gt;Windows Binary Releases&lt;/a&gt; ” 或向下滚动&lt;/p&gt;&#xA;&lt;p&gt;选择 “Win32 动态像素每像素 16 位”，请确保选择动态组件而不是静态组件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;下载用于-imagemagick-的-php-模块&#34;&gt;下载用于 ImageMagick 的 php 模块&lt;/h2&gt;&#xA;&lt;p&gt;转到 &lt;a href=&#34;http://windows.php.net/downloads/pecl/releases/imagick/&#34;&gt;http://windows.php.net/downloads/pecl/releases/imagick/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;选择不是 “RC”（发行候选）版本的最高版本–当前为 3.4.3&lt;/p&gt;&#xA;&lt;p&gt;选择用于 VC14，x86 和 IIS 的 “NTS”（非线程安全）的 PHP（7.1）版本的条目&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
